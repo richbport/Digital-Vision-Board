@@ -1,5 +1,6 @@
-let first = "Hello";
-let last = "World!";
-console.log(first + " " + last); // Concatenation
-console.log(first.length); // String length
-console.log(first.toUpperCase()); // Reset to HELLO
+let x = 10;
+let y = 2.5;
+console.log(x + y); 
+
+console.log(0 / 0); // NaN
+console.log(5 / 0); // Infinity
