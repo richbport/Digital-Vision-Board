@@ -31,6 +31,15 @@
     border-top: 4px solid #ffffff;
 }
 
-.board-item.white {
+.board-item.purple {
     border-top: 4px solid rgb(135, 82, 209);
+}
+
+.item-image {
+    width: 100%;
+    height: 150px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
