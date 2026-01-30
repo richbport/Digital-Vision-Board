@@ -102,3 +102,11 @@
   background-color: #e74c3c;
   color: white;
 }
+
+.btn-edit:hover {
+  background-color: rgba(86, 80, 202, 0.2);
+}
+
+.btn-delete:hover {
+  background-color: rgba(231, 76, 60, 0.2);
+}
