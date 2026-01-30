@@ -34,7 +34,7 @@
 }
 
 .board-item.purple {
-    border-top: 4px solid rgb(135, 82, 209);
+    border-top: 4px solid rgb(89, 82, 209);
 }
 
 .item-image {
@@ -91,4 +91,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.action-btn.btn-secondary {
+  background-color: rgba(89, 82, 209, 0.2);
+  color: rgb(89, 82, 209)
+}
+
+.action-btn.btn-primary {
+  background-color: #e74c3c;
+  color: white;
 }
