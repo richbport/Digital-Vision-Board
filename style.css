@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+/* Vision Board Grid */
+
 .board-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -54,4 +56,9 @@
   color: #888;
   font-size: 12px;
   text-align: center;
+}
+
+.item-content {
+  padding: 15px;
+  flex-grow: 1;
 }
