@@ -35,6 +35,18 @@ header {
   margin-right: 10px;
 }
 
+.date-display {
+  text-align: right;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.full-date {
+  color: rgb(89, 82, 209);
+}
+
 /* Vision Board Grid */
 
 .board-container {
