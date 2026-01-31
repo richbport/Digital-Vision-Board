@@ -130,3 +130,9 @@
   align-items: center;
   display: flex;
 }
+
+.modal-content {
+  background-color: rgb(29, 29, 29);
+  width: 90%;
+  max-width: 500px;
+}
