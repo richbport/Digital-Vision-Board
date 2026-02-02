@@ -92,6 +92,12 @@ header {
   align-items: center;
 }
 
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
 /* Vision Board Grid */
 
 .board-container {
