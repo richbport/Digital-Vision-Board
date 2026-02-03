@@ -112,6 +112,11 @@ header {
   object-fit: cover;
 }
 
+.profile-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 
 
 /* Vision Board Grid */
