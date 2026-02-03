@@ -124,6 +124,8 @@ header {
 
 
 
+
+
 /* Vision Board Grid */
 
 .board-container {
@@ -262,4 +264,9 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
