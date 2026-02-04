@@ -332,3 +332,22 @@ header {
 .style-option input {
   cursor: pointer;
 }
+
+.style-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.style-indicator.blue {
+  background-color: #3498db;
+}
+.style-indicator.purple {
+  background-color: rgb(89, 82, 209);
+}
+.style-indicator.white {
+  background-color: rgb(232, 233, 222);
+}
+
+
+
