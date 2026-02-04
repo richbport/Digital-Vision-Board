@@ -131,6 +131,10 @@ header {
   width: 100%;
   text-align: left;
   margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 
