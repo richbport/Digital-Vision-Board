@@ -327,5 +327,8 @@ header {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.style-option input {
   cursor: pointer;
 }
