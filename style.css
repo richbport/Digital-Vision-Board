@@ -307,6 +307,12 @@ header {
   color: white;
 }
 
+.form-input:focus,
+.textarea-input:focus {
+  border-color: rgb(89, 82, 209);
+  outline: none;
+}
+
 .textarea-input {
   height: 100px;
   resize: none;
