@@ -127,6 +127,10 @@ header {
   color: white;
   border: none;
   border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
 }
 
 
