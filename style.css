@@ -317,3 +317,8 @@ header {
   height: 100px;
   resize: none;
 }
+
+.style-options {
+  display: flex;
+  gap: 20px;
+}
