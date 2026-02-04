@@ -322,3 +322,9 @@ header {
   display: flex;
   gap: 20px;
 }
+
+.style-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
