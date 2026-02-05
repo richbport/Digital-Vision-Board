@@ -337,9 +337,8 @@ header {
   cursor: pointer;
 }
 .style-option input[type="radio"] {
- position: relative;
- top: -3px; /* move up 3px */
-}
+  transform: scale(1.2) translateY(-3px);
+} 
 
 .style-indicator {
   width: 12px;
