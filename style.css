@@ -336,6 +336,10 @@ header {
 .style-option input {
   cursor: pointer;
 }
+.style-option input[type="radio"] {
+  position: relative;
+  top: -3px; /* move up 3px */
+}
 
 .style-indicator {
   width: 12px;
