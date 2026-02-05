@@ -342,11 +342,11 @@ header {
 .style-indicator.blue {
   background-color: #3498db;
 }
-.style-indicator.purple {
-  background-color: rgb(89, 82, 209);
+.style-indicator.purple { 
+  background-color: #5852d1;
 }
 .style-indicator.white {
-  background-color: rgb(232, 233, 222);
+  background-color: #e8e9de;
 }
 
 
