@@ -365,3 +365,9 @@ header {
   background-color: #463ebd;
 }
 
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: #aaa;
+}
+
