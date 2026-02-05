@@ -358,6 +358,7 @@ header {
   font-weight: 500;
   cursor: pointer;
   margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
 .save-btn:hover {
