@@ -329,6 +329,10 @@ header {
   gap: 5px;
 }
 
+.style-option label {
+  cursor: pointer;
+}
+
 .style-option input {
   cursor: pointer;
 }
@@ -337,7 +341,6 @@ header {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  cursor: text;
 }
 
 .style-indicator.blue {
