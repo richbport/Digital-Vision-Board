@@ -137,6 +137,12 @@ header {
   align-items: center;
 }
 
+  /* Main Container */
+  .container {
+    display: flex;
+    height: calc(100vh - 67px);
+  }
+
 /* Vision Board Grid */
 
 .board-container {
