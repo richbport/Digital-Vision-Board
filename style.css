@@ -151,6 +151,11 @@ header {
     overflow: auto;
   }
 
+  .content-section {
+    background-color: rgb(29, 29, 29);
+    border-radius: 15px;
+  }
+
 /* Vision Board Grid */
 
 .board-container {
