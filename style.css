@@ -143,6 +143,14 @@ header {
     height: calc(100vh - 67px);
   }
 
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    height: 100%;
+    overflow: auto;
+  }
+
 /* Vision Board Grid */
 
 .board-container {
