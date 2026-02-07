@@ -181,7 +181,13 @@ header {
     height: 32px;
     border-radius: 50%;
     background-color: rgb(89, 82, 209);
-    
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
   }
 
 /* Vision Board Grid */
