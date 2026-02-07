@@ -190,6 +190,10 @@ header {
     font-size: 20px;
   }
 
+  .add-item-btn:hover {
+    background-color: rgb(70, 62, 189);
+  }
+
 /* Vision Board Grid */
 
 .board-container {
