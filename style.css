@@ -170,6 +170,10 @@ header {
     display: block;
     width: 130px;
     height: 3px;
+    background-color: rgb(89, 82, 290);
+    position: aboslute;
+    bottom: -5px;
+    left: 0;
   }
 
 /* Vision Board Grid */
