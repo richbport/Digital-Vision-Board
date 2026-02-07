@@ -176,6 +176,14 @@ header {
     left: 0;
   }
 
+  .add-item-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(89, 82, 209);
+    
+  }
+
 /* Vision Board Grid */
 
 .board-container {
