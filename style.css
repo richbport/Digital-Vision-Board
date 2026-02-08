@@ -202,7 +202,6 @@ header {
   }
 
 /* Vision Board Grid */
-
 .board-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -282,6 +281,7 @@ header {
 }
 
 .action-btn {
+  border: none;
   border: none;
   width: 36px;
   height: 36px;
