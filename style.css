@@ -159,6 +159,13 @@ header {
     height: 100%;
   }
 
+  .content-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   .content-header {
     font-size: 24px;
     font-weight: bold;
