@@ -448,3 +448,9 @@ header {
     flex-direction: column;
   }
 }
+
+.sidebar {
+  width: 100%;
+  padding: 10px;
+}
+
