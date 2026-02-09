@@ -357,7 +357,7 @@ header {
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .form-input,
@@ -442,3 +442,9 @@ header {
   color: #aaa;
 }
 
+/* Mobile Respnsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
