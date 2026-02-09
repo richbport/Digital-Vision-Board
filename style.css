@@ -447,14 +447,18 @@ header {
   .container {
     flex-direction: column;
   }
-}
-
-.sidebar {
-  width: 100%;
-  padding: 10px;
-}
-
-.main-content {
-  padding: 10px;
+  
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .main-content {
+    padding: 10px;
+  }
+  
+  .board-container {
+    grid-template-columns: 1fr;
+  }
 }
 
