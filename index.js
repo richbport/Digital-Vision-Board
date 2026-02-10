@@ -6,3 +6,5 @@ let editingItemId = null;
 const modal = document.getElementById("appModal");
 const addButton = document.getElementById("addItemBtn");
 const closeButton = document.getElementById("closeModalBtn");
+const SaveButton = document.getElementById("saveItemBtn");
+const visionBoard = document.getElementById("visionBoard");
