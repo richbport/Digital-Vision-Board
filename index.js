@@ -3,6 +3,7 @@ let visionBoardItems = [];
 let isEditing = false;
 let editingItemId = null;
 
+// 2. Get elements from the page
 const modal = document.getElementById("appModal");
 const addButton = document.getElementById("addItemBtn");
 const closeButton = document.getElementById("closeModalBtn");
