@@ -25,6 +25,7 @@ function setupEventListeners() {
   closeButton.addEventListener("click", closeModal);
   // saveButton.addEventListener("click", saveItem); // Added only when saveItem() is added
 
+  // Close modal when clicking outside
 window.addEventListener("click", function (event) {
   if (event.target === modal) {
     closeModal();
