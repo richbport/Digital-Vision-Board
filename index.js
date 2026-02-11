@@ -14,5 +14,7 @@ const visionBoard = document.getElementById("visionBoard");
 // 3. When the page loads, set up everything
 document.addEventListener("DOMContentLoaded", function () {
   updateDate();
+  // loadSavedItems(); Added ONLY when loadSavedItems() is added
+  // displayItems(); // Added ONLY when displayItems() is added
   setupEventListeners();
 });
