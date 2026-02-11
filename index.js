@@ -22,4 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function setupEventListeners() {
   addButton.addEventListener("click", openAddModal);
   closeButton.addEventListener("click", closeModal);
+
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+})
 }
