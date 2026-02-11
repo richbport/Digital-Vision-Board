@@ -18,3 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // displayItems(); // Added ONLY when displayItems() is added
   setupEventListeners();
 });
+
+function setupEventListeners() {
+  addButton.addEventListener("click", openAddModal);
+  closeButton.addEventListener("click", closeModal);
+}
