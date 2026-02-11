@@ -19,9 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
   setupEventListeners();
 });
 
+// 4. Set up click events
 function setupEventListeners() {
   addButton.addEventListener("click", openAddModal);
   closeButton.addEventListener("click", closeModal);
+  // saveButton.addEventListener("click", saveItem); // Added only when saveItem() is added
 
 window.addEventListener("click", function (event) {
   if (event.target === modal) {
