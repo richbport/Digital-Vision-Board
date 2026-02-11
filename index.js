@@ -11,6 +11,7 @@ const SaveButton = document.getElementById("saveItemBtn");
 const visionBoard = document.getElementById("visionBoard");
 
 
+// 3. When the page loads, set up everything
 document.addEventListener("DOMContentLoaded", function () {
   updateDate();
   setupEventListeners();
