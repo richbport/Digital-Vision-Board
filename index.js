@@ -43,7 +43,4 @@ function updateDate() {
     "Saturday",
   ];
 
-  days.forEach(day => {
-    console.log(day)
-  })
 }
