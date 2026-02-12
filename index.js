@@ -33,6 +33,7 @@ window.addEventListener("click", function (event) {
 }
 
 function updateDate() {
+  const now = new Date();
   const days = [
     "Sunday",
     "Monday",
@@ -42,5 +43,6 @@ function updateDate() {
     "Friday",
     "Saturday",
   ];
+  const dayName = days[now.getDay()];
 
 }
