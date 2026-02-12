@@ -29,7 +29,7 @@ window.addEventListener("click", function (event) {
   if (event.target === modal) {
     closeModal();
   }
-})
+});
 }
 
 // 5. Update the date in the header
@@ -53,5 +53,4 @@ function updateDate() {
 
   document.getElementById("currentDay").textContent = dayName;
   document.getElementById("currentDate").textContent = formattedDate;
-
 }

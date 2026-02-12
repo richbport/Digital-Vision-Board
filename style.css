@@ -322,7 +322,7 @@ header {
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  display: flex;
+  /* display: flex; */
 }
 
 .modal-content {
