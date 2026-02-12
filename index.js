@@ -50,4 +50,7 @@ function updateDate() {
   const year = now.getFullYear();
   const formattedDate = `${month}/${day}/${year}`;
 
+  document.getElementById("currentDay").textContent = dayName;
+  document.getElementById("currentDate").textContent = formattedDate;
+
 }
