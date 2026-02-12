@@ -32,6 +32,7 @@ window.addEventListener("click", function (event) {
 })
 }
 
+// 5. Update the date in the header
 function updateDate() {
   const now = new Date();
   const days = [
