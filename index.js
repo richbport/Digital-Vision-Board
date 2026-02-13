@@ -61,4 +61,8 @@ function openAddModal() {
   document.getElementById("inputTitle").value = "";
   document.getElementById("inputDescription").value = "";
   document.getElementById("inputImageUrl").value = "";
+  
+  document.querySelector(
+    'input[name="itemStyle"][value="blue"]'
+  ).checked = true;
 }
