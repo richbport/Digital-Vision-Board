@@ -62,6 +62,7 @@ function openAddModal() {
   document.getElementById("inputDescription").value = "";
   document.getElementById("inputImageUrl").value = "";
   
+  // Set blue as default
   document.querySelector(
     'input[name="itemStyle"][value="blue"]'
   ).checked = true;
