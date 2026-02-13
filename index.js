@@ -54,3 +54,8 @@ function updateDate() {
   document.getElementById("currentDay").textContent = dayName;
   document.getElementById("currentDate").textContent = formattedDate;
 }
+
+function openAddModal() {
+  document.getElementById("modalTitle").textContent = "Add New Goal";
+  document.getElementById("inputTitle").value = "";
+}
