@@ -72,7 +72,7 @@ function openAddModal() {
   modal.style.display = "flex";
 }
 
-
+// 7. Close the modal
 function closeModal() {
   modal.style.display = "none";
 }
