@@ -55,6 +55,7 @@ function updateDate() {
   document.getElementById("currentDate").textContent = formattedDate;
 }
 
+// 6. Open the modal to add a new item
 function openAddModal() {
   document.getElementById("modalTitle").textContent = "Add New Goal";
   document.getElementById("inputTitle").value = "";
