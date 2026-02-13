@@ -58,4 +58,6 @@ function updateDate() {
 function openAddModal() {
   document.getElementById("modalTitle").textContent = "Add New Goal";
   document.getElementById("inputTitle").value = "";
+  document.getElementById("inputDescription").value = "";
+  document.getElementById("inputImageUrl").value = "";
 }
