@@ -66,4 +66,8 @@ function openAddModal() {
   document.querySelector(
     'input[name="itemStyle"][value="blue"]'
   ).checked = true;
+
+  isEditing = false;
+  editingItemId = null;
+  modal.style.display = "flex";
 }
