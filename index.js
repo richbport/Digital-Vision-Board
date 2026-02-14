@@ -76,3 +76,8 @@ function openAddModal() {
 function closeModal() {
   modal.style.display = "none";
 }
+
+function openEditModal(item) {
+  document.getElementById('modalTitle').textContent = "Edit Goal";
+  document.getElementById('inputTitle').value = item.title;
+}
