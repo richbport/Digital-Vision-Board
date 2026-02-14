@@ -12,11 +12,11 @@ const visionBoard = document.getElementById("visionBoard");
 
 // 3. When the page loads, set up everything
 document.addEventListener("DOMContentLoaded", function () {
-    updateDate();
-    // loadSavedItems(); Added ONLY when loadSavedItems() is added
-    // displayItems(); // Added ONLY when displayItems() is added
-    setupEventListeners();
-  });
+  updateDate();
+  // loadSavedItems(); Added ONLY when loadSavedItems() is added
+  // displayItems(); // Added ONLY when displayItems() is added
+  setupEventListeners();
+});
 
 // 4. Set up click events
 function setupEventListeners() {
@@ -25,11 +25,11 @@ function setupEventListeners() {
   // saveButton.addEventListener("click", saveItem); // Added only when saveItem() is added
 
   // Close modal when clicking outside
-window.addEventListener("click", function (event) {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
 }
 
 // 5. Update the date in the header
@@ -61,11 +61,10 @@ function openAddModal() {
   document.getElementById("inputTitle").value = "";
   document.getElementById("inputDescription").value = "";
   document.getElementById("inputImageUrl").value = "";
-  
+
   // Set blue as default
-  document.querySelector(
-    'input[name="itemStyle"][value="blue"]'
-  ).checked = true;
+  document.querySelector('input[name="itemStyle"][value="blue"]').checked =
+    true;
 
   isEditing = false;
   editingItemId = null;
@@ -78,8 +77,10 @@ function closeModal() {
 }
 
 function openEditModal(item) {
-  document.getElementById('modalTitle').textContent = "Edit Goal";
-  document.getElementById('inputTitle').value = item.title;
-  document.getElementById('inputDescription').value = item.description;
-  document.getElementById('inputImageUrl').value = item.imageUrl || ""; 
+  document.getElementById("modalTitle").textContent = "Edit Goal";
+  document.getElementById("inputTitle").value = item.title;
+  document.getElementById("inputDescription").value = item.description;
+  document.getElementById("inputImageUrl").value = item.imageUrl || "";
+
+  document.querySelector();
 }
