@@ -82,5 +82,7 @@ function openEditModal(item) {
   document.getElementById("inputDescription").value = item.description;
   document.getElementById("inputImageUrl").value = item.imageUrl || "";
 
-  document.querySelector();
+  document.querySelector(
+    `input[name="itemStyle"][value="${item.style}"]`
+  ).checked = true;
 }
