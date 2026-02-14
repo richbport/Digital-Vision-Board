@@ -85,4 +85,8 @@ function openEditModal(item) {
   document.querySelector(
     `input[name="itemStyle"][value="${item.style}"]`
   ).checked = true;
+
+  isEditing = true;
+  editingItemId = item.id;
+  modal.style.display = "flex";
 }
