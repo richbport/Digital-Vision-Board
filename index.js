@@ -80,4 +80,6 @@ function closeModal() {
 function openEditModal(item) {
   document.getElementById('modalTitle').textContent = "Edit Goal";
   document.getElementById('inputTitle').value = item.title;
+  document.getElementById('inputDescription').value = item.description;
+  document.getElementById('inputImageUrl').value = item.imageUrl || ""; 
 }
