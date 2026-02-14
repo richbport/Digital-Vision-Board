@@ -82,6 +82,7 @@ function openEditModal(item) {
   document.getElementById("inputDescription").value = item.description;
   document.getElementById("inputImageUrl").value = item.imageUrl || "";
 
+  // Set the correct style
   document.querySelector(
     `input[name="itemStyle"][value="${item.style}"]`
   ).checked = true;
