@@ -91,3 +91,10 @@ function openEditModal(item) {
   editingItemId = item.id;
   modal.style.display = "flex";
 }
+
+function editItemById(itemId) {
+  const item = visionBoardItems.find((i) => i.id === itemId);
+  if (item) {
+    openEditModal(item);
+  }
+}
