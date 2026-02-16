@@ -102,4 +102,13 @@ function editItemById(itemId) {
 // 10. Display al items on the board
 function displayItems() {
   // function declaration
+  if (visionBoardItems.length === 0) {
+    visionBoard.innerHTML = `
+    <div class="empty-state">
+    <p>Your vision board is empty. Click the + button to add a goal</p>
+    </div>
+    `;
+    return;
+}
+
 }
