@@ -98,3 +98,8 @@ function editItemById(itemId) {
     openEditModal(item);
   }
 }
+
+// 10. Display al items on the board
+function displayItems() {
+  // function declaration
+}
