@@ -115,6 +115,7 @@ function displayItems() {
 visionBoard.innerHTML = ""; // This line clears existing content to prevent duplicates when displayItems() is called multiple times.
 
 visionBoardItems.forEach(item) => {
+  // loops through each item in the array and creates a new div element with CSS classes for styling.
   const boardItem = document.createElement("div");
   boardItem.className = `board-item ${item.style}`;
 
