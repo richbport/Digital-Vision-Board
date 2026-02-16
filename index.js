@@ -103,6 +103,7 @@ function editItemById(itemId) {
 function displayItems() {
   // function declaration
   if (visionBoardItems.length === 0) {
+    // checks if visionBoardItems array is empty. If so, runs the below:
     visionBoard.innerHTML = `
     <div class="empty-state">
     <p>Your vision board is empty. Click the + button to add a goal</p>
