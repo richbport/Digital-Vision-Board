@@ -119,5 +119,14 @@ visionBoardItems.forEach(item) => {
   const boardItem = document.createElement("div");
   boardItem.className = `board-item ${item.style}`;
 
+  // Then we grab that recent created div with the styling based on whatever style the user selected in the modal and sets its innerHTML:
+  boardItem.innerHTML = `
+  <div class="item-image">
+  ${
+    item.imageUrl
+    ? `<img src="${item.imageUrl}" alt="${item.title}">`
+    : `<div class="item-image-placeholder">No image</div>`
+  }
+  </div>`
 }
 }
