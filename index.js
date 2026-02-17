@@ -164,3 +164,11 @@ function displayItems() {
   // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it shows on the page
   });
 }
+
+function saveItemsToStorage() {
+  try {
+    console.log["Saving items:", visionBoardItems];
+  } catch (error) {
+    console.log["Could not save items to storage"];
+  }
+}
