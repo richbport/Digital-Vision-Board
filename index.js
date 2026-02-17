@@ -183,5 +183,8 @@ function saveItem() {
     return;
   }
 
+  const description = document.getElementById("inputDescription").value.trim();
+  const imageUrl = document.getElementById("inputImageUrl").value.trim();
+
   
 }
