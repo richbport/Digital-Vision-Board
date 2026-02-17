@@ -97,6 +97,7 @@ function editItemById(itemId) {
   // declares a function named editItemId that accepts one parameter called itemId
   const item = visionBoardItems.find((i) => i.id === itemId); // searches the visionBoardItems array to find an item whose id property matches item
   if (item) {
+    // If that item exists then call the openEditModal, passing the item in question from the visionBoard array of items
     openEditModal(item);
   }
 }
