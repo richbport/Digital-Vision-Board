@@ -160,6 +160,6 @@ function displayItems() {
     </div>
   `;
 
-  
+  visionBoard.appendChild(boardItem);
   });
 }
