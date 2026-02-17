@@ -161,6 +161,6 @@ function displayItems() {
   `;
 
   visionBoard.appendChild(boardItem); // This adds the completed item element to the vision board container, making it visible on the page
-  // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it show on (the page?)
+  // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it shows on the page
   });
 }
