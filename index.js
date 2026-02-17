@@ -84,7 +84,7 @@ function openEditModal(item) {
 
   // Set the correct style
   document.querySelector(
-    `input[name="itemStyle"][value="${item.style}"]`,
+    `input[name="itemStyle"][value="${item.style}"]` // item.style can be 'blue', 'purple', or 'white'
   ).checked = true;
 
   isEditing = true; // This sets the global flag to indicate we're in editing mode rather than adding a new item
