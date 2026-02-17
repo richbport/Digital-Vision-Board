@@ -178,5 +178,10 @@ function saveItemsToStorage() {
 function saveItem() {
   const title = document.getElementById("inputTitle").value.trim();
 
+  if (!title) {
+    alert("Please enter a goal title!");
+    return;
+  }
+
   
 }
