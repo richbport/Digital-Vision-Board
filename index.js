@@ -84,7 +84,7 @@ function openEditModal(item) {
 
   // Set the correct style
   document.querySelector(
-    `input[name="itemStyle"][value="${item.style}"]`
+    `input[name="itemStyle"][value="${item.style}"]`,
   ).checked = true;
 
   isEditing = true;
@@ -110,22 +110,22 @@ function displayItems() {
     </div>
     `;
     return;
-}
+  }
 
-visionBoard.innerHTML = ""; // This line clears existing content to prevent duplicates when displayItems() is called multiple times.
+  visionBoard.innerHTML = ""; // This line clears existing content to prevent duplicates when displayItems() is called multiple times.
 
-visionBoardItems.forEach(item) => {
-  // loops through each item in the array and creates a new div element with CSS classes for styling.
-  const boardItem = document.createElement("div");
-  boardItem.className = `board-item ${item.style}`;
+  visionBoardItems.forEach((item) => {
+    // loops through each item in the array and creates a new div element with CSS classes for styling.
+    const boardItem = document.createElement("div");
+    boardItem.className = `board-item ${item.style}`; // point to the example of blue/white/purple classes in CSS
 
-  // Then we grab that recent created div with the styling based on whatever style the user selected in the modal and sets its innerHTML:
-  boardItem.innerHTML = `
+    // Then we grab that recent created div with the styling based on whatever style the user selected in the modal and sets its innerHTML:
+    boardItem.innerHTML = `
   <div class="item-image">
   ${
-    item.imageUrl
-    ? `<img src="${item.imageUrl}" alt="${item.title}">`
-    : `<div class="item-image-placeholder">No image</div>`
+    item.imageUrl // Checks if the user placed any picture, if he did, show that picture. if not, show a placeholder
+      ? `<img src="${item.imageUrl}" alt="${item.title}">`
+      : `<div class="item-image-placeholder">No image</div>`
   }
   </div>
   <div class="item-content">
@@ -133,9 +133,8 @@ visionBoardItems.forEach(item) => {
     <div class="item-title">${item.title}</div>
   <!== *****ITEM DESCRIPTION***** ==>
     <div class="item-description">${
-      item.description /*Item title selected by the user */ || 
-      "No description"
+      item.description /*Item title selected by the user */ || "No description"
     }</div>
-  `
-}
+  `;
+  });
 }
