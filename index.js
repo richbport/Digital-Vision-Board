@@ -122,22 +122,23 @@ function displayItems() {
     // Then we grab that recent created div with the styling based on whatever style the user selected in the modal and sets its innerHTML:
     boardItem.innerHTML = `
   <div class="item-image">
-  ${
-    item.imageUrl // Checks if the user placed any picture, if he did, show that picture. if not, show a placeholder
-      ? `<img src="${item.imageUrl}" alt="${item.title}">`
-      : `<div class="item-image-placeholder">No image</div>`
+    ${ item.imageUrl // Checks if the user placed any picture, if he did, show that picture. if not, show a placeholder 
+    ? `<img src="${item.imageUrl}" alt="${item.title}"/>` 
+    : `<div class="item-image-placeholder">No image</div>` 
   }
   </div>
   <div class="item-content">
   <!== *****ITEM TITLE SELECTED BY USER***** ==>
     <div class="item-title">${item.title}</div>
   <!== *****ITEM DESCRIPTION***** ==>
-    <div class="item-description">${
-      item.description /*Item title selected by the user */ || "No description"
-    }</div>
+    <div class="item-description">
+      ${item.description /*Item title selected by the user */ || "No description" }
+    </div>
     <div class="action-buttons">
     <!-- *****This creates two action buttons for each item - an edit button that calls editItemById and a delete button called deleteItem
-    <button class="action-btn btn-secondary" onclick="editItemById('${
+      <button 
+        class="action-btn btn-secondary" 
+        onclick="editItemById('${
       item.id
     }')">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -145,8 +146,7 @@ function displayItems() {
       <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
     </svg>
     </button>
-    <button class="action-btn btn-secondary" onclick="deleteItem('${
-      item.id
+    <button class="action-btn btn-secondary" onclick="deleteItem('${item.id
     }')">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="3 6 5 6 21 6"></polyline>
@@ -154,6 +154,11 @@ function displayItems() {
       <line x1="10" y1="11" x2="10" y2="17"></line>
       <line x1="14" y1="11" x2="14" y2="17"></line>
     </svg>
+    </button>
+    </div>
+    </div>
   `;
+
+  
   });
 }
