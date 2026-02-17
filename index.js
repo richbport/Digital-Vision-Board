@@ -165,10 +165,12 @@ function displayItems() {
   });
 }
 
+// 11. Save items to browser storage
 function saveItemsToStorage() {
+  // Since localStorage isn't available we simulate its behavior, so this function consoles the visionBoardItems (array of all items)
   try {
-    console.log["Saving items:", visionBoardItems];
+    console.log("Saving items:", visionBoardItems);
   } catch (error) {
-    console.log["Could not save items to storage"];
+    console.log("Could not save items to storage");
   }
 }
