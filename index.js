@@ -131,6 +131,8 @@ visionBoardItems.forEach(item) => {
   <div class="item-content">
   <!== *****ITEM TITLE SELECTED BY USER***** ==>
     <div class="item-title">${item.title}</div>
+  <!== *****ITEM DESCRIPTION***** ==>
+    <div class="item-description">${item.description /*Item title selected by the user */ || "No description"}</div>
   `
 }
 }
