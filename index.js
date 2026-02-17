@@ -87,9 +87,9 @@ function openEditModal(item) {
     `input[name="itemStyle"][value="${item.style}"]`,
   ).checked = true;
 
-  isEditing = true;
-  editingItemId = item.id;
-  modal.style.display = "flex";
+  isEditing = true; // This sets the global flag to indicate we're in editing mode rather than adding a new item
+  editingItemId = item.id; // This saves the current item's id so we know which item to update when the user saves changes (show saveItem function)
+  modal.style.display = "flex"; // This makes the modal visible by setting its display property to 'flex'
 }
 
 function editItemById(itemId) {
@@ -122,32 +122,30 @@ function displayItems() {
     // Then we grab that recent created div with the styling based on whatever style the user selected in the modal and sets its innerHTML:
     boardItem.innerHTML = `
   <div class="item-image">
-    ${ item.imageUrl // Checks if the user placed any picture, if he did, show that picture. if not, show a placeholder 
-    ? `<img src="${item.imageUrl}" alt="${item.title}"/>` 
-    : `<div class="item-image-placeholder">No image</div>` 
-  }
+    ${
+      item.imageUrl // Checks if the user placed any picture, if he did, show that picture. if not, show a placeholder
+        ? `<img src="${item.imageUrl}" alt="${item.title}"/>`
+        : `<div class="item-image-placeholder">No image</div>`
+    }
   </div>
   <div class="item-content">
   <!== *****ITEM TITLE SELECTED BY USER***** ==>
     <div class="item-title">${item.title}</div>
   <!== *****ITEM DESCRIPTION***** ==>
     <div class="item-description">
-      ${item.description /*Item title selected by the user */ || "No description" }
+      ${item.description /*Item title selected by the user */ || "No description"}
     </div>
     <div class="action-buttons">
     <!-- *****This creates two action buttons for each item - an edit button that calls editItemById and a delete button called deleteItem
       <button 
         class="action-btn btn-secondary" 
-        onclick="editItemById('${
-      item.id
-    }')">
+        onclick="editItemById('${item.id}')">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
       <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
     </svg>
     </button>
-    <button class="action-btn btn-secondary" onclick="deleteItem('${item.id
-    }')">
+    <button class="action-btn btn-primary" onclick="deleteItem('${item.id}')">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="3 6 5 6 21 6"></polyline>
       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
