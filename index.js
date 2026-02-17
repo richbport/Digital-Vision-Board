@@ -174,3 +174,9 @@ function saveItemsToStorage() {
     console.log("Could not save items to storage");
   }
 }
+
+function saveItem() {
+  const title = document.getElementById("inputTitle").value.trim();
+
+  
+}
