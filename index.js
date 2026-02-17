@@ -92,8 +92,10 @@ function openEditModal(item) {
   modal.style.display = "flex"; // This makes the modal visible by setting its display property to 'flex'
 }
 
+// 9. Helper function to edit item by ID
 function editItemById(itemId) {
-  const item = visionBoardItems.find((i) => i.id === itemId);
+  // declares a function named editItemId that accepts one parameter called itemId
+  const item = visionBoardItems.find((i) => i.id === itemId); // searches the visionBoardItems array to find an item whose id property matches item
   if (item) {
     openEditModal(item);
   }
