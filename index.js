@@ -127,6 +127,10 @@ visionBoardItems.forEach(item) => {
     ? `<img src="${item.imageUrl}" alt="${item.title}">`
     : `<div class="item-image-placeholder">No image</div>`
   }
-  </div>`
+  </div>
+  <div class="item-content">
+  <!== *****ITEM TITLE SELECTED BY USER***** ==>
+    <div class="item-title">${item.title}</div>
+  `
 }
 }
