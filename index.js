@@ -188,12 +188,13 @@ function saveItem() {
   const description = document.getElementById("inputDescription").value.trim();
   const imageUrl = document.getElementById("inputImageUrl").value.trim();
 
+  // This finds all the color theme radio buttons, loops through them to find which one is selected, and stored that value (defaulting to "blue")
   let selectedStyle = "blue";
   const styleRadios = document.querySelectorAll('input[name="itemStyle"]');
   for (let radio of styleRadios) {
     if (radio.checked) {
-      selectedStyle = radio.value;
-      break;
+      selectedStyle = radio.value; // Sets the selectedStyles variable to radio.value from the checked radio input
+      break; // when the selected one is found, break the for loop
     }
   }
 }
