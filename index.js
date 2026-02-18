@@ -183,11 +183,11 @@ function saveItem() {
 
   if (!title) {
     alert("Please enter a goal title!");
-    return;
   }
 
   const description = document.getElementById("inputDescription").value.trim();
   const imageUrl = document.getElementById("inputImageUrl").value.trim();
 
-  
+  let selectedStyle = "blue";
+  const styleRadios = document.querySelectorAll('input[name="itemStyle"]');
 }
