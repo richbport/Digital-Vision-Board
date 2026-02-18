@@ -190,4 +190,10 @@ function saveItem() {
 
   let selectedStyle = "blue";
   const styleRadios = document.querySelectorAll('input[name="itemStyle"]');
+  for (let radio of styleRadios) {
+    if (radio.checked) {
+      selectedStyle = radio.value;
+      break;
+    }
+  }
 }
