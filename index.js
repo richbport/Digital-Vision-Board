@@ -214,11 +214,14 @@ function saveItem() {
     const itemIndex = visionBoardItems.findIndex((i) => i.id === editingItemId);
     if (itemIndex !== -1) {
       // If is found then replace the current item to the new one (item)
-      visionBoardItems(itemIndex) = item;
+      visionBoardItems[itemIndex] = item;
     }
   } else {
     // If is not found then it means is a new one and in that case we want to push the created item to the visionBoardItems (the array that ??)
     visionBoardItems.push(item);
   }
-
 }
+
+saveItemsToStorage();
+displayItems();
+closeModal();
