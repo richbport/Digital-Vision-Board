@@ -208,4 +208,8 @@ function saveItem() {
     imageUrl: imageUrl,
     style: selectedStyle,
   };
+
+  if (isEditing) {
+    const itemIndex = visionBoardItems.findIndex((i) => i.id === editingItemId);
+  }
 }
