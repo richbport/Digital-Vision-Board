@@ -214,5 +214,8 @@ function saveItem() {
     if (itemIndex !== -1) {
       visionBoardItems(itemIndex) = item;
     }
+  } else {
+    visionBoardItems.push(item);
   }
+  
 }
