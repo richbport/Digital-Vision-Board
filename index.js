@@ -199,4 +199,13 @@ function saveItem() {
       break; // when the selected one is found, break the for loop
     }
   }
+
+
+  const item = {
+    id: isEditing ? editingItemId : Date.now().toString(),
+    title: title,
+    description: description,
+    imageUrl: imageUrl,
+    style: selectedStyle,
+  };
 }
