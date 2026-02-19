@@ -102,7 +102,7 @@ function editItemById(itemId) {
   }
 }
 
-// 10. Display al items on the board
+// 10. Display all items on the board
 function displayItems() {
   // function declaration
   // **UNCOMMENT FUNCTION CALL ABOVE (LINE 25)**
@@ -162,13 +162,13 @@ function displayItems() {
   `;
 
   visionBoard.appendChild(boardItem); // This adds the completed item element to the vision board container, making it visible on the page
-  // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it shows on the page
+  // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it shows on the page.
   });
 }
 
 // 11. Save items to browser storage
 function saveItemsToStorage() {
-  // Since localStorage isn't available we simulate its behavior, so this function consoles the visionBoardItems (array of all items)
+  // Since localStorage isn't available we simulate its behavior, so this function consoles the visionBoardItems (array of all items), and if any errors occur it logs it to the console.
   try {
     console.log("Saving items:", visionBoardItems);
   } catch (error) {
@@ -178,7 +178,7 @@ function saveItemsToStorage() {
 
 // Save a new or edited item
 function saveItem() {
-  // This function handles saving both new and edited items by firs getting the form input values and validating that a title was entered
+  // This function handles saving both new and edited items by firs getting the form input values and validating that a title was entered (stopping execution if empty).
   // **Uncomment function call on line 17
   const title = document.getElementById("inputTitle").value.trim();
 
