@@ -222,6 +222,7 @@ function saveItem() {
   }
 }
 
+// This completes the save process by storing the data (simulation), refreshing the display to show the changes, and closing the modal dialog box
 saveItemsToStorage();
 displayItems();
 closeModal();
