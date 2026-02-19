@@ -178,12 +178,13 @@ function saveItemsToStorage() {
 
 // Save a new or edited item
 function saveItem() {
-  // This function handles saving both new and edited items by firs getting the form input values and validating that a title was entered (stopping execution if empty).
+  // This function handles saving both new and edited items by first getting the form input values and validating that a title was entered (stopping execution if empty).
   // **Uncomment function call on line 17
   const title = document.getElementById("inputTitle").value.trim();
 
   if (!title) {
     alert("Please enter a goal title!");
+    return;
   }
 
   const description = document.getElementById("inputDescription").value.trim();
