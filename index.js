@@ -14,7 +14,7 @@ const visionBoard = document.getElementById("visionBoard");
 document.addEventListener("DOMContentLoaded", function () {
   updateDate();
   // loadSavedItems(); Added ONLY when loadSavedItems() is added
-  // displayItems(); // Added ONLY when displayItems() is added
+  displayItems(); // Added ONLY when displayItems() is added
   setupEventListeners();
 });
 
@@ -105,6 +105,7 @@ function editItemById(itemId) {
 // 10. Display al items on the board
 function displayItems() {
   // function declaration
+  // **UNCOMMENT FUNCTION CALL ABOVE (LINE 25)**
   if (visionBoardItems.length === 0) {
     // checks if the visionBoardItems array is empty. If so, runs the below:
     visionBoard.innerHTML = `
