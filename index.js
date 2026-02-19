@@ -200,7 +200,7 @@ function saveItem() {
     }
   }
 
-
+// This creates a complete item object with all of the form data, using either the existing item's ID (if editing) or generating a new timestamp
   const item = {
     id: isEditing ? editingItemId : Date.now().toString(),
     title: title,
