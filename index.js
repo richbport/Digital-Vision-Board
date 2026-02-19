@@ -211,5 +211,8 @@ function saveItem() {
 
   if (isEditing) {
     const itemIndex = visionBoardItems.findIndex((i) => i.id === editingItemId);
+    if (itemIndex !== -1) {
+      visionBoardItems(itemIndex) = item;
+    }
   }
 }
