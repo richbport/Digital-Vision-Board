@@ -84,7 +84,7 @@ function openEditModal(item) {
 
   // Set the correct style
   document.querySelector(
-    `input[name="itemStyle"][value="${item.style}"]` // item.style can be 'blue', 'purple', or 'white'
+    `input[name="itemStyle"][value="${item.style}"]`, // item.style can be 'blue', 'purple', or 'white'
   ).checked = true;
 
   isEditing = true; // This sets the global flag to indicate we're in editing mode rather than adding a new item
@@ -161,8 +161,8 @@ function displayItems() {
     </div>
   `;
 
-  visionBoard.appendChild(boardItem); // This adds the completed item element to the vision board container, making it visible on the page
-  // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it shows on the page.
+    visionBoard.appendChild(boardItem); // This adds the completed item element to the vision board container, making it visible on the page
+    // appendChild adds an element to the end of the parent element. In this case, it puts the new item into the vision board so it shows on the page.
   });
 }
 
@@ -200,7 +200,7 @@ function saveItem() {
     }
   }
 
-// This creates a complete item object with all of the form data, using either the existing item's ID (if editing) or generating a new timestamp
+  // This creates a complete item object with all of the form data, using either the existing item's ID (if editing) or generating a new timestamp
   const item = {
     id: isEditing ? editingItemId : Date.now().toString(),
     title: title,
@@ -220,9 +220,9 @@ function saveItem() {
     // If is not found then it means is a new one and in that case we want to push the created item to the visionBoardItems (the array that ??)
     visionBoardItems.push(item);
   }
-}
 
-// This completes the save process by storing the data (simulation), refreshing the display to show the changes, and closing the modal dialog box
-saveItemsToStorage();
-displayItems();
-closeModal();
+  // This completes the save process by storing the data (simulation), refreshing the display to show the changes, and closing the modal dialog box
+  saveItemsToStorage();
+  displayItems();
+  closeModal();
+}
