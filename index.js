@@ -13,7 +13,7 @@ const visionBoard = document.getElementById("visionBoard");
 // 3. When the page loads, set up everything
 document.addEventListener("DOMContentLoaded", function () {
   updateDate();
-  // loadSavedItems(); Added ONLY when loadSavedItems() is added
+  loadSavedItems(); // Added ONLY when loadSavedItems() is added
   displayItems(); // Added ONLY when displayItems() is added
   setupEventListeners();
 });
@@ -269,8 +269,12 @@ function deleteItem(itemId) {
   }
 }
 
+// 14. Load saved items from browswe storage (simulation)
 function loadSavedItems() {
+  // This function is designed to load prevdiously saved vision board items and uses a try-catch block to handle potential errors when accessing 
+  // **UNCOMMENT FUNCTION CALL ON LINE 16**
   try {
+    // Right now, we just set the visionBoardItems array to empty because local storage isn't available in this environment.
     visionBoardItems = [];
   } catch (error) {
     console.log("Could not load saved items");
