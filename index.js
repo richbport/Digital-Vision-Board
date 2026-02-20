@@ -77,15 +77,17 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-// 8. The edit modal
+// 8. Open the modal to edit an existing modal
 function openEditModal(item) {
-  document.getElementById("modalTitle").textContent = "Edit Goal";
-  document.getElementById("inputTitle").value = item.title;
-  document.getElementById("inputDescription").value = item.description;
-  document.getElementById("inputImageUrl").value = item.imageUrl || "";
+  // declares a function named openEditModal that accepts one parameter called item containing the goal data to be edited.
+  document.getElementById("modalTitle").textContent = "Edit Goal"; // changes the modal title to "Edit Goal" since add goal and edit goal use ?
+  document.getElementById("inputTitle").value = item.title; // This sets the title input field to display the current title of the item being ?
+  document.getElementById("inputDescription").value = item.description; // This sets the description input field to display the current ?
+  document.getElementById("inputImageUrl").value = item.imageUrl || ""; // This sets the image URL input field to display the current image ?
 
   // Set the correct style
   document.querySelector(
+    // This finds the radio button matching the item's current color style and selects it.
     `input[name="itemStyle"][value="${item.style}"]`, // item.style can be 'blue', 'purple', or 'white'
   ).checked = true;
 
@@ -272,7 +274,7 @@ function deleteItem(itemId) {
 
 // 14. Load saved items from browswe storage (simulation)
 function loadSavedItems() {
-  // This function is designed to load prevdiously saved vision board items and uses a try-catch block to handle potential errors when accessing 
+  // This function is designed to load prevdiously saved vision board items and uses a try-catch block to handle potential errors when accessing ??
   // **UNCOMMENT FUNCTION CALL ON LINE 16**
   try {
     // Right now, we just set the visionBoardItems array to empty because local storage isn't available in this environment.
@@ -283,7 +285,7 @@ function loadSavedItems() {
     visionBoardItems = savedItems ? JSON.parse(savedItems) : [];
     */
   } catch (error) {
-    // If it failed for any reason, it logs an error message and defaults to an empty array, ensuring the app still works if storage ?
+    // If it failed for any reason, it logs an error message and defaults to an empty array, ensuring the app still works if storage ??
     console.log("Could not load saved items");
     visionBoardItems = [];
   }
