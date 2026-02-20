@@ -134,14 +134,14 @@ function displayItems() {
     }
   </div>
     <div class="item-content">
-      <!== *****ITEM TITLE SELECTED BY USER***** ==>
+      <!-- *****ITEM TITLE SELECTED BY USER***** -->
       <div class="item-title">${item.title}</div>
-      <!== *****ITEM DESCRIPTION***** ==>
+      <!-- *****ITEM DESCRIPTION***** -->
       <div class="item-description">
         ${item.description /*Item title selected by the user */ || "No description"}
       </div>
       <div class="action-buttons">
-        <!-- *****This creates two action buttons for each item - an edit button that calls editItemById and a delete button called deleteItem
+        <!-- *****This creates two action buttons for each item - an edit button that calls editItemById and a delete button called deleteItem -->
         <button 
           class="action-btn btn-secondary" 
           onclick="editItemById('${item.id}')">
