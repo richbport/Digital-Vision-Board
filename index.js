@@ -7,7 +7,7 @@ let editingItemId = null;
 const modal = document.getElementById("appModal");
 const addButton = document.getElementById("addItemBtn");
 const closeButton = document.getElementById("closeModalBtn");
-const SaveButton = document.getElementById("saveItemBtn");
+const saveButton = document.getElementById("saveItemBtn");
 const visionBoard = document.getElementById("visionBoard");
 
 // 3. When the page loads, set up everything
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function setupEventListeners() {
   addButton.addEventListener("click", openAddModal);
   closeButton.addEventListener("click", closeModal);
-  // saveButton.addEventListener("click", saveItem); // Added only when saveItem() is added
+  saveButton.addEventListener("click", saveItem); // Added only when saveItem() is added
 
   // Close modal when clicking outside
   window.addEventListener("click", function (event) {
