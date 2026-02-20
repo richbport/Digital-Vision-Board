@@ -77,6 +77,7 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+// 8. The edit modal
 function openEditModal(item) {
   document.getElementById("modalTitle").textContent = "Edit Goal";
   document.getElementById("inputTitle").value = item.title;
@@ -276,8 +277,14 @@ function loadSavedItems() {
   try {
     // Right now, we just set the visionBoardItems array to empty because local storage isn't available in this environment.
     visionBoardItems = [];
+    /*
+    NORMAL IMPLEMENTATION WOULD BE:
+    const savedItems = localStorage.getItem('visionBoardItems');
+    visionBoardItems = savedItems ? JSON.parse(savedItems) : [];
+    */
   } catch (error) {
+    // If it failed for any reason, it logs an error message and defaults to an empty array, ensuring the app still works if storage ?
     console.log("Could not load saved items");
-    visionBoardItems[];
+    visionBoardItems = [];
   }
 }
