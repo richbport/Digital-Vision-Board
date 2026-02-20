@@ -261,8 +261,9 @@ function saveItem() {
 function deleteItem(itemId) {
   // This function handled deleting an item by its ID and first shows a confirmation dialog to prevent accidental deletions.
   if (confirm("Are you sure you want to delete this goal?")) {
-    // This creates a new array containing all the items except the one with matching ID, effectively removing the target item from the data?
+    // This creates a new array containing all the items except the one with matching ID, effectively removing the target item from the data??
     visionBoardItems = visionBoardItems.filter((item) => item.id !== itemId);
+    // This saves the updated array (simulation) and refreshes the display to show the item has been removed, but only executes if the user ??
     saveItemsToStorage();
     displayItems();
   }
