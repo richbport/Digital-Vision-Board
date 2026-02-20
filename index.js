@@ -268,3 +268,12 @@ function deleteItem(itemId) {
     displayItems();
   }
 }
+
+function loadSavedItems() {
+  try {
+    visionBoardItems = [];
+  } catch (error) {
+    console.log("Could not load saved items");
+    visionBoardItems[];
+  }
+}
