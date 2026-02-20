@@ -260,5 +260,7 @@ function saveItem() {
 function deleteItem(itemId) {
   if (confirm("Are you sure you want to delete this goal?")) {
     visionBoardItems = visionBoardItems.filter((item) => item.id !== itemId);
+    saveItemsToStorage();
+    displayItems();
   }
 }
