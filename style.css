@@ -423,11 +423,12 @@ header {
 }
 
 .save-btn {
-  background-color: #5952d1;
+  background-color: #6c65e3;
   color: white;
   border: none;
   padding: 10px 25px;
   border-radius: 5px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   margin-top: 20px;
@@ -442,6 +443,7 @@ header {
   padding: 40px;
   text-align: center;
   color: #aaa;
+  font-size: 20px;
 }
 
 /* Mobile Respnsiveness */
