@@ -177,10 +177,10 @@ header {
   .content-header:after {
     content: "";
     display: block;
-    width: 130px;
+    width: 175px;
     height: 3px;
     background-color: rgb(89, 82, 290);
-    position: aboslute;
+    position: absolute;
     bottom: -5px;
     left: 0;
   }
